@@ -1,0 +1,42 @@
+###
+GET http://127.0.0.1:8000/questions/
+Accept: application/json
+
+###
+POST http://127.0.0.1:8000/questions/
+Content-Type: application/json
+
+{
+
+"title"	   : "Factorial of a Given Number",
+"language"	:"python",
+"notes"	: "Calculate the factorial ",
+"difficulty_levels"	:"easy",
+"sample_input"	: 5,
+"sample_output" :	120,
+"topic"	: "Loops",
+"score" : 10
+
+}
+
+###
+GET http://127.0.0.1:8000/questions/1/
+Accept: application/json
+
+###
+PUT http://127.0.0.1:8000/questions/3/
+Content-Type: application/json
+
+{
+    "title": "Count Digits in a Number",
+    "language": "python",
+    "notes": "Count the number of digits in a given positive integer.",
+    "difficulty_levels": "easy",
+    "sample_input": 12345,
+    "sample_output": 5,
+    "topic": "Loops",
+    "score": 10
+  }
+
+###
+DELETE  http://127.0.0.1:8000/questions//
